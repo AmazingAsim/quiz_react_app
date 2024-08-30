@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    padding: 10px;
+    text-align: center;
+    background:rgba(0,0,0,0.4);
+    position: sticky;
+    top: 0px;
+}
+
+body{
+    background-image: url('https://community.adobe.com/legacyfs/online/1516782_Clouds.gif');
+    background-size: cover;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 3vw;
+    color:yellow;
+    margin:0px 30px;
+}
+
+.qbox{
+    width: 70vw;
+    padding:20px;
+    background: rgba(0,0,0,0.8);
+    margin: 20px auto;
+    color:yellow;
+    font-size: 1.5vw;
+}
+
+.questionbox{
+    margin:20px;
+}
+.questionbox button{
+    width:10vw;
+    padding: 10px;
+    border-radius: 10px;
+    border:none;
+    margin-top: 5px;
+}
+
+.questionbox button:hover{
+   background: lightgray;
+}
+
+.questionbox button:active{
+   background: yellow;
+   font-weight: bold;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    position: sticky;
+    top:80px;
+}
+
+.flexbox button{
+    border-radius: 10px;
+    border:none;
+    padding: 10px;
+    background:green;
+    color:white;
+    font-weight: bold;
+}
+
+.flexbox button:hover{
+    background:lightgreen;
+}
+
+.flexbox button:active{
+    background-color: yellowgreen;
+}
