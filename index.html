@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asim sheikh's Quiz App</title>
-    <link rel="shortcut icon" href="https://www.shutterstock.com/image-vector/quiz-logo-time-label-question-260nw-2299277831.jpg" type="image/x-icon">
+    <link rel="shortcut icon"
+        href="https://www.shutterstock.com/image-vector/quiz-logo-time-label-question-260nw-2299277831.jpg"
+        type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,12 +25,13 @@
         <div class="flexbox">
             <div class="col">
                 <div class="card">
-                    <img src="https://play-lh.googleusercontent.com/vMq6_OouGHPzSt697sd-W9jjTP5l8rscPfYakniVAM0hPVVdtBZrjVO0xgXY1oHCuXs=w526-h296-rw" alt="">
+                    <img src="https://play-lh.googleusercontent.com/vMq6_OouGHPzSt697sd-W9jjTP5l8rscPfYakniVAM0hPVVdtBZrjVO0xgXY1oHCuXs=w526-h296-rw"
+                        alt="">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, adipisci. Iste obcaecati qui
                         quibusdam!
                         Inventore voluptatibus quis veritatis, aut ipsa et tempore porro repellendus ipsam aspernatur
                         error repellat ex quidem.</p>
-                    <button>Start the Quiz</button>
+                    <a href="gk.html">Start the Quiz</a>
                 </div>
             </div>
             <div class="col">
@@ -38,30 +41,31 @@
                         quibusdam!
                         Inventore voluptatibus quis veritatis, aut ipsa et tempore porro repellendus ipsam aspernatur
                         error repellat ex quidem.</p>
-                    <button>Start the Quiz</button>
+                    <a href="math.html">Start the Quiz</a>
                 </div>
             </div>
             <div class="col">
                 <div class="card">
                     <div class="card">
-                        <img src="https://i.ytimg.com/vi/sqzo0L1EK6c/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAg-MVUy7x7Oo4WnedlBFkhXYXQ8A" alt="">
+                        <img src="https://i.ytimg.com/vi/sqzo0L1EK6c/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAg-MVUy7x7Oo4WnedlBFkhXYXQ8A"
+                            alt="">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, adipisci. Iste obcaecati qui
                             quibusdam!
                             Inventore voluptatibus quis veritatis, aut ipsa et tempore porro repellendus ipsam
                             aspernatur error repellat ex quidem.</p>
-                        <button>Start the Quiz</button>
+                        <a href="science.html">Start the Quiz</a>
                     </div>
                 </div>
             </div>
     </section>
-    
-<!-- javascript here -->
+
+    <!-- javascript here -->
     <script>
         let name = localStorage.getItem('name');
-        if(name === null){
-            while(!name){
-            name = prompt('Enter your name');
-            localStorage.setItem('name',name);
+        if (name === null) {
+            while (!name) {
+                name = prompt('Enter your name');
+                localStorage.setItem('name', name);
             }
         }
         let nameBox = document.getElementById('name');

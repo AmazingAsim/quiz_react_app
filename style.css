@@ -91,8 +91,20 @@ nav a{
     padding:10px;
 }
 
-.card button{
-    margin:10px;
+.card a{
+    background-color: yellow;
+    color:black;
+    text-decoration: none;
+    padding:10px;
+    box-shadow: 0px 0px 10px white;
+    border-radius: 5px;
+    display: block;
+    width: fit-content;
+    margin:10px 10px;
+}
+.card a:active{
+    background-color: black;
+    color: white;
 }
 
 section h2{

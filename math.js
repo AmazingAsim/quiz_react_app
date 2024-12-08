@@ -127,11 +127,12 @@ let correctAnswers = 0;
 function check(event, answer, option) {
     if (answer === option) {
         correctAnswers++;
-        event.target.style.background = 'lightgreen';
+        event.target.style.background = 'green';
     }
     else {
         event.target.style.background = 'red';
     }
+    event.target.style.color = 'white';
     let parentDiv = event.target.parentElement;
     let buttons = parentDiv.querySelectorAll('button');
     buttons.forEach(function (button) {
