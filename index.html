@@ -59,8 +59,10 @@
     <script>
         let name = localStorage.getItem('name');
         if(name === null){
+            while(!name){
             name = prompt('Enter your name');
             localStorage.setItem('name',name);
+            }
         }
         let nameBox = document.getElementById('name');
         nameBox.innerHTML = name;

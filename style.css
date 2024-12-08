@@ -71,7 +71,6 @@ nav a{
     background:green;
     color:white;
     font-weight: bold;
-    margin:10px;
 }
 
 .flexbox button:hover{
@@ -90,6 +89,10 @@ nav a{
 
 .card p{
     padding:10px;
+}
+
+.card button{
+    margin:10px;
 }
 
 section h2{
