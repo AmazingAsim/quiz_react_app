@@ -106,9 +106,9 @@ let mathBox = document.getElementById('mathBox');
 
 
 
-questions.map(function(q){
+questions.map(function (q) {
     let div = document.createElement('div');
-    div.setAttribute('class','questionbox');
+    div.setAttribute('class', 'questionbox');
     div.innerHTML = `
      <h3>${q.question}</h3>
      <div class="buttonBox">
@@ -124,19 +124,22 @@ questions.map(function(q){
 let correctAnswers = 0;
 
 
-function check(event,answer,option){
-    if(answer === option){
-     correctAnswers++;
-    };
-    event.target.style.background = 'blue';
+function check(event, answer, option) {
+    if (answer === option) {
+        correctAnswers++;
+        event.target.style.background = 'lightgreen';
+    }
+    else {
+        event.target.style.background = 'red';
+    }
     let parentDiv = event.target.parentElement;
     let buttons = parentDiv.querySelectorAll('button');
-    buttons.forEach(function(button){
+    buttons.forEach(function (button) {
         button.disabled = true;
     })
- 
- }
 
- function submit(){
+}
+
+function submit() {
     alert(`Your score is ${correctAnswers}/10`);
 }

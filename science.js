@@ -124,10 +124,13 @@ let correctAnswers = 0
 
 
 function check(event,answer,option){
-    if(answer === option){
-     correctAnswers++;
-    };
-    event.target.style.background = 'blue';
+    if (answer === option) {
+        correctAnswers++;
+        event.target.style.background = 'lightgreen';
+    }
+    else {
+        event.target.style.background = 'red';
+    }
     let parentDiv = event.target.parentElement;
     let buttons = parentDiv.querySelectorAll('button');
     buttons.forEach(function(button){
