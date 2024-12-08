@@ -59,7 +59,10 @@ nav a{
     padding: 16px;
     position: sticky;
     top:80px;
+    gap: 10px;
 }
+
+
 
 .flexbox button{
     border-radius: 10px;
@@ -68,6 +71,7 @@ nav a{
     background:green;
     color:white;
     font-weight: bold;
+    margin:10px;
 }
 
 .flexbox button:hover{
@@ -76,4 +80,26 @@ nav a{
 
 .flexbox button:active{
     background-color: yellowgreen;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card p{
+    padding:10px;
+}
+
+section h2{
+    text-align: center;
+    color:yellow;
+    font-size: 3em;
+}
+
+#name{
+    
+    font-family: cursive;
+    text-shadow: 0px 0px 10px white;
 }

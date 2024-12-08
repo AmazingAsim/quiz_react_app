@@ -1,24 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="gk.html">General knowledge</a>
-        <a href="math.html">Maths Quiz</a>
-        <a href="science.html">Science Quiz</a>
-    </nav>
     <header>
-         <h1>Welcome To The Quiz Mania</h1>
-         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-             Officiis atque maxime quidem facilis dolore numquam cupiditate aspernatur, praesentium alias reiciendis odio fugiat labore ipsa doloribus 
-             aliquam at in tempora soluta
-        </p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gk.html">General knowledge</a>
+            <a href="math.html">Maths Quiz</a>
+            <a href="science.html">Science Quiz</a>
+        </nav>
     </header>
+    <section>
+        <h2>Hello <span id="name"></span>, Welcome to the Quiz, Your name is now Registered.</h2>
+        <div class="flexbox">
+            <div class="col">
+                <div class="card">
+                    <img src="https://play-lh.googleusercontent.com/vMq6_OouGHPzSt697sd-W9jjTP5l8rscPfYakniVAM0hPVVdtBZrjVO0xgXY1oHCuXs=w526-h296-rw" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, adipisci. Iste obcaecati qui
+                        quibusdam!
+                        Inventore voluptatibus quis veritatis, aut ipsa et tempore porro repellendus ipsam aspernatur
+                        error repellat ex quidem.</p>
+                    <button>Start the Quiz</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/NfOk6JZWdL4/maxresdefault.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, adipisci. Iste obcaecati qui
+                        quibusdam!
+                        Inventore voluptatibus quis veritatis, aut ipsa et tempore porro repellendus ipsam aspernatur
+                        error repellat ex quidem.</p>
+                    <button>Start the Quiz</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card">
+                        <img src="https://i.ytimg.com/vi/sqzo0L1EK6c/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAg-MVUy7x7Oo4WnedlBFkhXYXQ8A" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, adipisci. Iste obcaecati qui
+                            quibusdam!
+                            Inventore voluptatibus quis veritatis, aut ipsa et tempore porro repellendus ipsam
+                            aspernatur error repellat ex quidem.</p>
+                        <button>Start the Quiz</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+<!-- javascript here -->
+    <script>
+        let name = localStorage.getItem('name');
+        if(name === null){
+            name = prompt('Enter your name');
+            localStorage.setItem('name',name);
+        }
+        let nameBox = document.getElementById('name');
+        nameBox.innerHTML = name;
+    </script>
+
 </body>
+
 </html>
