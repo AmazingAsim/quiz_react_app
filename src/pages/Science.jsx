@@ -20,7 +20,7 @@ export default function Science() {
 
   return (
     <div>
- <div className="container border-bottom py-3  mb-3 d-flex justify-content-between align-items-center text-light">
+ <div className="container border-bottom py-3  mb-3 d-flex justify-content-between align-items-center text-light bg-opacity-50 bg-dark">
         <h1 className='display-3 fw-bolder'>Science Quiz</h1>
         <h3 >Score: {score}</h3>
       </div>      <div className="container">
