@@ -25,11 +25,13 @@ export default function Home() {
 
       card.addEventListener('mouseover',function(){
         card.classList.add('bg-opacity-50');
+        card.querySelector('img').classList.add('blur');
         card.querySelector('div').classList.remove('collapse');
         card.querySelector('div').classList.add('card-img-overlay');
       })
 
       card.addEventListener('mouseout',function(){
+        card.querySelector('img').classList.remove('blur');
         card.querySelector('div').classList.remove('card-img-overlay');
         card.querySelector('div').classList.add('collapse');
       })
