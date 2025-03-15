@@ -1,0 +1,16 @@
+@import url('../node_modules/bootstrap');
+
+body{
+    height: 100vh;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/008/889/844/non_2x/quiz-set-in-doodle-style-illustration-icon-question-symbol-for-print-and-design-quiz-and-exam-concept-isolated-element-on-black-background-collection-of-sign-for-school-and-event-vector.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav{
+    background-color: white;
+    box-shadow: 0px 0px 10px white;
+    position: sticky !important;
+    top: 0px !important;
+    z-index: 1 !important;
+}
